@@ -26,7 +26,7 @@ class StoreRequest extends FormRequest
     {
         return [
             'string' => [new OneOrOther('file'), 'string'],
-            'file' => [new OneOrOther('string'), 'mimetypes:text/markdown,text/plain'],
+            'file' => [new OneOrOther('string')],
         ];
     }
 }
